@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.puntos {
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    color: #fff;
+    overflow: auto;
+    background-color: transparent;
+    padding: 5px 10px;
+}
+
+.puntos div {
+    margin: 0 5px;
+}
+
+.contenedor {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background: -webkit-linear-gradient(top, #2575fc, #4c25fc);
+}
+
+.jugador1,
+.jugador2 {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .6s ease;
+}
+
+.selector {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    padding: 50px 0px;
+}
+
+svg {
+    width: 100px;
+}
+
+.selector div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 20px 25px;
+    transition: all 1s;
+}
+
+.selector div:hover {
+    border: 2px solid #ccc;
+}
+
+.jugar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 100px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    margin: 10px 0;
+}
+
+button#jugar {
+    width: 40%;
+}
+
+.seleccionado {
+    transition: all 1s;
+}
+
+.alerta {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+}
